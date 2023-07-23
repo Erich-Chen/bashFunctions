@@ -4,7 +4,7 @@ A few functions added into .bashrc or .zshrc
 ````
 # Function to set proxy
 function setproxy() {
-    PROXY='http://10.80.16.2:3128'
+    PROXY='http://127.0.0.1:7890'
     export {http,https,ftp,HTTP,HTTPS,FTP}_proxy=$PROXY
     if hash git 2>/dev/null; then
       git config --global http.proxy $PROXY
